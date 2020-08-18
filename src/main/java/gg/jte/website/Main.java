@@ -7,7 +7,6 @@ import gg.jte.resolve.DirectoryCodeResolver;
 import io.javalin.Javalin;
 import io.javalin.http.Context;
 import io.javalin.http.staticfiles.Location;
-import org.jetbrains.annotations.NotNull;
 
 import java.nio.file.Path;
 
