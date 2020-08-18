@@ -19,18 +19,25 @@
             background-image: linear-gradient(#02aab0, #00cdac);
             background-repeat: no-repeat;
             background-attachment: fixed;
+            line-height: 160%;
         }
         .header {
             text-align: center;
         }
         h1 {
             font-weight: 500;
+            line-height: 120%;
         }
         .header h1 {
             margin-top: 0;
         }
         .content {
             text-align: center;
+            margin: 0 20pt;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
         }
         .footer {
             margin-top: 40pt;
@@ -54,18 +61,16 @@
 
     <div class="content">
         <h1 style="margin-top: 30pt;">Why jte?</h1>
-        <ul style="list-style-type:none;">
-            <li>Intuitive, easy to learn <a href="https://github.com/casid/jte/blob/master/DOCUMENTATION.md">syntax</a>.</li>
-            <li>Blazing fast execution, about <a href="https://github.com/casid/jte#performance">100k templates rendered per second</a> on a MacBook Pro 2015.</li>
-            <li>Very small footprint, just one external dependency for output escaping.</li>
-            <li><a href="https://plugins.jetbrains.com/plugin/14521-jte">IntelliJ plugin</a> offering completion and refactoring support.</li>
-            <li>Hot reloading of templates during development.</li>
-            <li>Compile time checked, context-sensitive, high performance HTML output escaping.</li>
-        </ul>
+        Intuitive, easy to learn <a href="https://github.com/casid/jte/blob/master/DOCUMENTATION.md">syntax</a>.<br>
+        Blazing fast execution, about <a href="https://github.com/casid/jte#performance">100k templates rendered per second</a> on a MacBook Pro 2015.<br>
+        Very small footprint, just one external dependency for output escaping.<br>
+        <a href="https://plugins.jetbrains.com/plugin/14521-jte">IntelliJ plugin</a> offering completion and refactoring support.<br>
+        Hot reloading of templates during development.<br>
+        Compile time checked, context-sensitive, high performance HTML output escaping.<br>
     </div>
 
     <div class="footer">
-        <a href="https://github.com/casid/jte">jte</a> rendered this site in ${page.getRenderTime()}.<br/>
+        <a href="https://github.com/casid/jte">jte</a> rendered this site in ${page.getRenderTime()}.<br>
         Running on <a href="https://javalin.io/">Javalin</a>.
     </div>
 </body>
