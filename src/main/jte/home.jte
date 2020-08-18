@@ -34,6 +34,7 @@
         }
         .footer {
             margin-top: 40pt;
+            margin-bottom: 40pt;
             text-align: center;
         }
         a {
