@@ -47,6 +47,11 @@
         a {
             color: #fff;
         }
+        ul {
+            text-align: left;
+            width:auto;
+            display: inline-block;
+        }
     </style>
 </head>
 
@@ -61,12 +66,14 @@
 
     <div class="content">
         <h1 style="margin-top: 30pt;">Why jte?</h1>
-        Intuitive, easy to learn <a href="https://github.com/casid/jte/blob/master/DOCUMENTATION.md">syntax</a>.<br>
-        Blazing fast execution, about <a href="https://github.com/casid/jte#performance">100k templates rendered per second</a> on a MacBook Pro 2015.<br>
-        Very small footprint, just one external dependency for output escaping.<br>
-        <a href="https://plugins.jetbrains.com/plugin/14521-jte">IntelliJ plugin</a> offering completion and refactoring support.<br>
-        Hot reloading of templates during development.<br>
-        Compile time checked, context-sensitive, high performance HTML output escaping.<br>
+        <ul>
+            <li>Compile time checked and context-sensitive</li>
+            <li><a href="https://plugins.jetbrains.com/plugin/14521-jte">IntelliJ plugin</a> offering completion and refactoring support</li>
+            <li>Hot reloading of templates during development</li>
+            <li>Intuitive, easy to learn <a href="https://github.com/casid/jte/blob/master/DOCUMENTATION.md">syntax</a></li>
+            <li>Blazing fast execution (<a href="https://github.com/casid/jte#performance">~100k renders/s</a> on a MacBook Pro 2015)</li>
+            <li>Very small footprint (just one external dependency for HTML escaping)</li>
+        </ul>
     </div>
 
     <div class="footer">
