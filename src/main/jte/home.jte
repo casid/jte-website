@@ -5,6 +5,7 @@
 <head>
     <title>jte</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A fast and lightweight template engine for Java">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     <style type="text/css">
@@ -51,6 +52,7 @@
             text-align: left;
             width:auto;
             display: inline-block;
+            padding-left: 10pt;
         }
     </style>
 </head>
