@@ -9,13 +9,14 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <jte.version>1.2.0</jte.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>gg.jte</groupId>
             <artifactId>jte</artifactId>
-            <version>1.0.0</version>
+            <version>${jte.version}</version>
         </dependency>
         <dependency>
             <groupId>io.javalin</groupId>
@@ -55,17 +56,16 @@
             <plugin>
                 <groupId>gg.jte</groupId>
                 <artifactId>jte-maven-plugin</artifactId>
-                <version>1.0.0</version>
+                <version>${jte.version}</version>
                 <configuration>
                     <sourceDirectory>${basedir}/src/main/jte</sourceDirectory>
-                    <targetDirectory>${basedir}/jte-classes</targetDirectory>
                     <contentType>Html</contentType>
                 </configuration>
                 <executions>
                     <execution>
-                        <phase>process-classes</phase>
+                        <phase>generate-sources</phase>
                         <goals>
-                            <goal>precompile</goal>
+                            <goal>generate</goal>
                         </goals>
                     </execution>
                 </executions>

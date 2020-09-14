@@ -21,6 +21,8 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             line-height: 160%;
+            padding: 0 10px;
+            box-sizing: border-box;
         }
         .header {
             text-align: center;
@@ -28,13 +30,13 @@
         h1 {
             font-weight: 500;
             line-height: 120%;
+            margin-top: 30pt;
         }
         .header h1 {
             margin-top: 0;
         }
         .content {
             text-align: center;
-            margin: 0 20pt;
         }
         img {
             max-width: 100%;
@@ -52,7 +54,23 @@
             text-align: left;
             width:auto;
             display: inline-block;
-            padding-left: 10pt;
+            padding: 0 20pt;
+            margin: 0;
+        }
+        p, pre {
+            text-align: left;
+            max-width: 696px;
+            width: 100%;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+        p {
+            margin: 0;
+        }
+        pre {
+            padding: 5px 12px;
+            background-color: #02aab0;
+            overflow: auto;
         }
     </style>
 </head>
@@ -67,7 +85,7 @@
     </div>
 
     <div class="content">
-        <h1 style="margin-top: 30pt;">Why jte?</h1>
+        <h1>Why jte?</h1>
         <ul>
             <li>Compile time checked and context-sensitive</li>
             <li><a href="https://plugins.jetbrains.com/plugin/14521-jte">IntelliJ plugin</a> offering completion and refactoring support</li>
@@ -76,11 +94,45 @@
             <li>Blazing fast execution (<a href="https://github.com/casid/jte#performance">~100k renders/s</a> on a MacBook Pro 2015)</li>
             <li>Very small footprint (just one external dependency for HTML escaping)</li>
         </ul>
+
+        <h1>🚀 Getting started</h1>
+        <p>Create a new file <i>src/main/jte/hello.jte</i>:</p>
+        <pre>&#x40;param String name
+Hello &#36;{name}!
+The current timestamp is &#36;{System.currentTimeMillis()}.</pre>
+        <p>Add maven dependency</p>
+        <pre>&lt;dependency&gt;
+    &lt;groupId>gg.jte&lt;/groupId&gt;
+    &lt;artifactId&gt;jte&lt;/artifactId&gt;
+    &lt;version&gt;1.2.0&lt;/version&gt;
+&lt;/dependency&gt;</pre>
+
+        <p>Render the template:</p>
+        <pre>// Tell jte where your template files are located
+var codeResolver = new DirectoryCodeResolver(Path.of("src", "main", "jte"));
+
+// Create the template engine (usually once per application)
+var templateEngine = TemplateEngine.create(codeResolver, ContentType.Html);
+
+// Render
+var output = new StringOutput();
+templateEngine.render("hello.jte", "World", output);
+System.out.println(output);</pre>
+        <p>Run the program and you should see this console output:</p>
+        <pre>Hello World!
+The current timestamp is ${System.currentTimeMillis()}.</pre>
+        <p>Congratulations! You got jte up and running 🤘.</p>
+
+        <h1>📚 Further reading</h1>
+        <ul>
+            <li><a href="https://github.com/casid/jte/blob/master/DOCUMENTATION.md">Official documentation</a></li>
+            <li><a href="https://javalin.io/tutorials/jte">Simple webserver tutorial</a></li>
+        </ul>
     </div>
 
     <div class="footer">
         <a href="https://github.com/casid/jte">jte</a> rendered this site in ${page.getRenderTime()}.<br>
-        Running on <a href="https://javalin.io/">Javalin</a>.
+        Running on <a href="https://javalin.io/">Javalin</a>.<br>
     </div>
 </body>
 

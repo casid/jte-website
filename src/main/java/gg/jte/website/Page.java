@@ -7,6 +7,6 @@ public class Page {
         long duration = System.nanoTime() - created;
         double millis = duration / 1000000.0;
 
-        return Math.round(millis * 1000.0) / 1000.0 + "ms";
+        return Math.round(millis * 1000.0) / 1000.0 + " milliseconds";
     }
 }
