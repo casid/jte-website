@@ -61,11 +61,9 @@
             text-align: left;
             max-width: 696px;
             width: 100%;
-            display: inline-block;
             box-sizing: border-box;
-        }
-        p {
-            margin: 0;
+            margin-left: auto;
+            margin-right: auto;
         }
         pre {
             padding: 5px 12px;
