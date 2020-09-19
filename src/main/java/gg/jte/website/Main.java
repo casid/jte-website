@@ -33,7 +33,7 @@ public class Main {
         if (devSystem) {
             return TemplateEngine.create(codeResolver, ContentType.Html);
         } else {
-            return TemplateEngine.createPrecompiled(ContentType.Html);
+            return TemplateEngine.createPrecompiled(Path.of("jte-classes"), ContentType.Html);
         }
     }
 
