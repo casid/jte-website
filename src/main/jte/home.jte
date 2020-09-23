@@ -78,7 +78,7 @@
 
     <div class="header">
         <a href="https://github.com/casid/jte"><img alt="jte" src="/assets/jte-no-bg.svg" width="164" height="164"></a>
-        <h1>A fast and lightweight<br>...template engine for Java</h1>
+        <h1>A fast and lightweight<br>template engine for Java</h1>
         <img alt="jte in action" src="https://raw.githubusercontent.com/casid/jte/master/jte-intellij.gif" style="max-width:100%; margin-top: 30px; box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);" width="696" height="312">
     </div>
 
