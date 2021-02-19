@@ -9,7 +9,7 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-        <jte.version>1.6.0</jte.version>
+        <jte.version>1.7.0</jte.version>
     </properties>
 
     <dependencies>
@@ -61,6 +61,7 @@
                     <sourceDirectory>${basedir}/src/main/jte</sourceDirectory>
                     <targetDirectory>${basedir}/jte-classes</targetDirectory>
                     <contentType>Html</contentType>
+                    <binaryStaticContent>true</binaryStaticContent>
                 </configuration>
                 <executions>
                     <execution>
