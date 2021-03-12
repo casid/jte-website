@@ -103,7 +103,7 @@ The current timestamp is &#36;{System.currentTimeMillis()}.</pre>
         <pre>&lt;dependency&gt;
     &lt;groupId>gg.jte&lt;/groupId&gt;
     &lt;artifactId&gt;jte&lt;/artifactId&gt;
-    &lt;version&gt;1.7.0&lt;/version&gt;
+    &lt;version&gt;1.9.0&lt;/version&gt;
 &lt;/dependency&gt;</pre>
 
         <p>Render the template:</p>
