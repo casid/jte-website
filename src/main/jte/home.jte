@@ -6,7 +6,7 @@
     <title>jte</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A fast and lightweight template engine for Java">
+    <meta name="description" content="Secure and speedy templates for Java and Kotlin">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     <style>
         html {
@@ -70,6 +70,9 @@
             background-color: #02aab0;
             overflow: auto;
         }
+        @media screen and (max-width: 500px)  {
+            .hide-on-mobile { display: none; }
+        }
     </style>
     <style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 </head>
@@ -79,7 +82,7 @@
 
     <div class="header">
         <a href="https://github.com/casid/jte"><img alt="jte" src="/assets/jte-no-bg.svg" width="164" height="164"></a>
-        <h1>Secure and speedy template engine for Java and Kotlin</h1>
+        <h1>Secure and speedy templates <br class="hide-on-mobile">for Java and Kotlin</h1>
         <img alt="jte in action" src="https://raw.githubusercontent.com/casid/jte/master/jte-intellij.gif" style="max-width:100%; margin-top: 30px; box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);" width="696" height="312">
     </div>
 
