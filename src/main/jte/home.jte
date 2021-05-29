@@ -79,19 +79,19 @@
 
     <div class="header">
         <a href="https://github.com/casid/jte"><img alt="jte" src="/assets/jte-no-bg.svg" width="164" height="164"></a>
-        <h1>A fast and lightweight<br>template engine for Java</h1>
+        <h1>Secure and speedy template engine for Java and Kotlin</h1>
         <img alt="jte in action" src="https://raw.githubusercontent.com/casid/jte/master/jte-intellij.gif" style="max-width:100%; margin-top: 30px; box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);" width="696" height="312">
     </div>
 
     <div class="content">
         <h1>Why jte?</h1>
         <ul>
-            <li>Compile time checked and context-sensitive</li>
-            <li><a href="https://plugins.jetbrains.com/plugin/14521-jte">IntelliJ plugin</a> offering completion and refactoring support</li>
-            <li>Hot reloading of templates during development</li>
             <li>Intuitive, easy to learn <a href="https://github.com/casid/jte/blob/master/DOCUMENTATION.md">syntax</a></li>
+            <li>Write plain Java or Kotlin for expressions</li>
+            <li>Context-sensitive output escaping at compile time</li>
+            <li><a href="https://plugins.jetbrains.com/plugin/14521-jte">IntelliJ plugin</a> with completion and refactoring support</li>
+            <li>Hot reloading of templates during development</li>
             <li>Blazing fast execution (<a href="https://github.com/casid/jte#performance">~100k renders/s</a> on a MacBook Pro 2015)</li>
-            <li>Very small footprint (just one external dependency for HTML escaping)</li>
         </ul>
 
         <h1>🚀 Getting started</h1>
