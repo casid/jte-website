@@ -61,6 +61,7 @@
                     <sourceDirectory>${basedir}/src/main/jte</sourceDirectory>
                     <targetDirectory>${basedir}/jte-classes</targetDirectory>
                     <contentType>Html</contentType>
+                    <binaryStaticContent>true</binaryStaticContent>
                 </configuration>
                 <executions>
                     <execution>
