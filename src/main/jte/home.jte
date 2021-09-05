@@ -23,6 +23,7 @@
             line-height: 160%;
             padding: 0 10px;
             box-sizing: border-box;
+            background-color: #151513;
         }
         .header {
             text-align: center;
