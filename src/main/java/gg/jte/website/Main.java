@@ -15,7 +15,11 @@ public class Main {
     }
 
     private static void initConfig(JavalinConfig config) {
-        config.addStaticFiles("/assets", "assets", Location.EXTERNAL);
+        config.addStaticFiles(c -> {
+            c.directory = "assets";
+            c.hostedPath = "/assets";
+            c.location = Location.EXTERNAL;
+        });
     }
 
     private static void render(Context ctx, Page page) {
