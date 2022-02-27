@@ -100,9 +100,9 @@
 
         <h1>🚀 Getting started</h1>
         <p>Create a new file <i>src/main/jte/hello.jte</i>:</p>
-        <pre>&#x40;param String name
-Hello &#36;{name}!
-The current timestamp is &#36;{System.currentTimeMillis()}.</pre>
+        <pre>@raw@param String name
+Hello ${name}!
+The current timestamp is ${System.currentTimeMillis()}.@endraw</pre>
         <p>Add maven dependency</p>
         <pre>&lt;dependency&gt;
     &lt;groupId>gg.jte&lt;/groupId&gt;
