@@ -9,7 +9,7 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-        <jte.version>2.0.3</jte.version>
+        <jte.version>2.0.4</jte.version>
     </properties>
 
     <dependencies>
