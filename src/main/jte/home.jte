@@ -107,7 +107,7 @@ The current timestamp is ${System.currentTimeMillis()}.@endraw</pre>
         <pre>&lt;dependency&gt;
     &lt;groupId>gg.jte&lt;/groupId&gt;
     &lt;artifactId&gt;jte&lt;/artifactId&gt;
-    &lt;version&gt;2.2.3&lt;/version&gt;
+    &lt;version&gt;2.2.4&lt;/version&gt;
 &lt;/dependency&gt;</pre>
 
         <p>Render the template:</p>
